@@ -724,8 +724,8 @@ p {
 
 .services-item {
 	background-color: var(--background);
-	padding: 16px 16px 24px 16px;
-	border-radius: 16px;
+	padding: 16px 16px 16px 16px;
+	border-radius: 12px;
 }
 
 .services-item .image {
