@@ -618,10 +618,10 @@
                       object-fit: contain;
                     }
                     
+                    /* Mengganti icon + menjadi text "View Design" */
                     .gallery-popup {
                       border: none;
-                      background: none;
-                      padding: 0;
+                      background: rgba(0, 0, 0, 0.7);
                       cursor: pointer;
                       position: absolute;
                       top: 50%;
@@ -633,20 +633,49 @@
                       display: flex;
                       align-items: center;
                       justify-content: center;
-                      width: 50px;
-                      height: 50px;
-                      background-color: rgba(0, 0, 0, 0.7);
-                      border-radius: 50%;
+                      width: auto;
+                      height: auto;
+                      padding: 12px 24px;
+                      border-radius: 4px;
+                      color: white;
+                      font-size: 16px;
+                      font-weight: 500;
                     }
-                    
+
+                    /* Menghapus style untuk icon + yang tidak digunakan */
+                    .gallery-popup .icon {
+                      display: none;
+                    }
+
+                    /* Menambahkan text "View Design" */
+                    .gallery-popup::after {
+                      content: 'View Design';
+                    }
+
+                    /* Mengubah warna hover button */
                     .gallery-popup:hover {
                       background-color: rgba(0, 0, 0, 0.9);
                     }
-                    
-                    .gallery-popup .icon {
-                      width: 24px;
-                      height: 24px;
-                      color: white;
+
+                    /* Mengubah warna arrow carousel menjadi lebih gelap */
+                    .carousel-control-prev-icon,
+                    .carousel-control-next-icon {
+                      background-color: rgba(0, 0, 0, 0.7);
+                      padding: 20px;
+                      border-radius: 50%;
+                      background-size: 50%;
+                    }
+
+                    /* Hover effect untuk arrow carousel */
+                    .carousel-control-prev:hover .carousel-control-prev-icon,
+                    .carousel-control-next:hover .carousel-control-next-icon {
+                      background-color: rgba(0, 0, 0, 0.9);
+                    }
+
+                    /* Memperbesar area klik untuk arrow */
+                    .carousel-control-prev,
+                    .carousel-control-next {
+                      width: 10%;
                     }
                     
                     .project-item .image {

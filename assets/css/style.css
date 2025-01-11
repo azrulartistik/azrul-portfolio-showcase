@@ -843,14 +843,14 @@ p {
 }
 
 .content-box-card .top-info p {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 400;
 	color: var(--light-black);
 	line-height: 1.333em;
 }
 
 .content-box-card .top-info p b {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 600;
 	color: var(--black);
 }
@@ -974,25 +974,46 @@ p {
 	margin-bottom: 32px;
 }
 
+/* CSS yang sudah ada */
 .content-box-card .working-with-area .working-with-main {
-	display: flex;
-	gap: 19px;
-	flex-wrap: wrap;
+    display: flex;
+    gap: 19px;
+    flex-wrap: wrap;
 }
 
 .content-box-card .working-with-area .working-with-main .items {
-	border-radius: 16px;
-	background-color: var(--background);
-	width: 80px;
-	height: 80px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    border-radius: 16px;
+    background-color: var(--background);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-box-card .working-with-area .working-with-main .items img {
-	width: 48px;
-	height: 48px;
+    width: 48px;
+    height: 48px;
+}
+
+/* Tambahkan CSS baru di bawah ini */
+.content-box-card .working-with-area {
+    margin-bottom: 4rem;  /* 80px */
+}
+
+.content-box-card .video-section {
+    margin-top: 4rem;
+}
+
+/* Optional: Menyesuaikan spacing responsive */
+@media (max-width: 768px) {
+    .content-box-card .working-with-area {
+        margin-bottom: 3rem;  /* 48px untuk layar mobile */
+    }
+    
+    .content-box-card .video-section {
+        margin-top: 3rem;
+    }
 }
 
 .content-box-card .client-feedback {
