@@ -212,55 +212,52 @@
     <!-- main area part start -->
     <main>
 
-      <section class="content-box-area mt-4">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-xl-4">
-              <div class="card profile-card">
-                <div class="card-body">
-                  <div class="image text-center">
-                    <img src="assets/img/images/azrul-photo.png" alt="azrul-photo">
-                  </div>
-                  <div class="text">
-                    <h3 class="card-title">Hazrul Aswad 👋</h3>
-                    <p>A Passionate <span>Product Designer</span> 🖥️ & <span>Design Mentor</span> that having more than
-                      <span>4
-                        years</span> of working experiences over some
-                      companies and institutions. Currently I'm diving into front-end coding ⚙️</p>
-                      <div class="common-button-groups">
-                        <!-- View CV button -->
-                        <a class="btn btn-call" href="https://drive.google.com/file/d/1GmXUGTA0YTMYciLD2jUOUDU6DdOtXLii/view?usp=sharing" target="_blank">
-                          <svg class="icon" width="25" height="24" viewBox="0 0 25 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <!-- Ikon dokumen sebagai pengganti ikon telepon -->
-                            <path d="M14.5 2H6.5C5.96957 2 5.46086 2.21071 5.08579 2.58579C4.71071 2.96086 4.5 3.46957 4.5 4V20C4.5 20.5304 4.71071 21.0391 5.08579 21.4142C5.46086 21.7893 5.96957 22 6.5 22H18.5C19.0304 22 19.5391 21.7893 19.9142 21.4142C20.2893 21.0391 20.5 20.5304 20.5 20V8L14.5 2Z" 
-                              stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M14.5 2V8H20.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M16.5 13H8.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M16.5 17H8.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.5 9H8.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
-                          View My CV
-                        </a>
-                        
-                        <!-- Copy Email button -->
-                        <button class="btn btn-copy" data-clipboard-text="azrulartistik9@gmail.com">
-                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8H18C18.5304 8 19.0391 8.21071 19.4142 8.58579C19.7893 8.96086 20 9.46957 20 10V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H10C9.46957 20 8.96086 19.7893 8.58579 19.4142C8.21071 19.0391 8 18.5304 8 18V10Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M16 8V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V14C4 14.5304 4.21071 15.0391 4.58579 15.4142C4.96086 15.7893 5.46957 16 6 16H8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                          Copy Email
-                        </button>
-                      </div>
-                      
-                      <!-- Script untuk fitur copy email -->
-                      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-                      <script>
-                        var clipboard = new ClipboardJS('.btn-copy');
-                        clipboard.on('success', function(e) {
-                          alert('Email copied to clipboard!');
-                        });
-                      </script>
+      <style>
+.btn-call, .btn-copy {
+  padding: 0.5rem 1rem;  /* Mengurangi padding default */
+  white-space: nowrap;   /* Mencegah text wrap */
+  min-width: 120px;      /* Memberikan minimum width */
+}
+
+.common-button-groups {
+  flex-wrap: nowrap;     /* Mencegah wrapping pada container */
+}
+
+/* Memastikan icon tidak terlalu besar */
+.icon {
+  flex-shrink: 0;       /* Mencegah icon dari shrinking */
+}
+</style>
+
+<section class="content-box-area mt-4">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-xl-4">
+        <div class="card profile-card">
+          <div class="card-body">
+            <div class="image text-center">
+              <img src="assets/img/images/azrul-photo.png" alt="azrul-photo">
+            </div>
+            <div class="text">
+              <h3 class="card-title">Hazrul Aswad 👋</h3>
+              <p>A Passionate <span>Product Designer</span> 🖥️ & <span>Design Mentor</span> that having more than
+                <span>4 years</span> of working experiences over some
+                companies and institutions. Currently I'm diving into front-end coding ⚙️</p>
+              <div class="common-button-groups d-flex gap-2">
+                <!-- View CV button -->
+                <a class="btn btn-call d-flex align-items-center justify-content-center gap-2" href="https://drive.google.com/file/d/1GmXUGTA0YTMYciLD2jUOUDU6DdOtXLii/view?usp=sharing" target="_blank"><svg class="icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 2H6.5C5.96957 2 5.46086 2.21071 5.08579 2.58579C4.71071 2.96086 4.5 3.46957 4.5 4V20C4.5 20.5304 4.71071 21.0391 5.08579 21.4142C5.46086 21.7893 5.96957 22 6.5 22H18.5C19.0304 22 19.5391 21.7893 19.9142 21.4142C20.2893 21.0391 20.5 20.5304 20.5 20V8L14.5 2Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.5 2V8H20.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.5 13H8.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.5 17H8.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 9H8.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>View My CV</a>
+                
+                <!-- Copy Email button -->
+                <button class="btn btn-copy d-flex align-items-center justify-content-center gap-2" data-clipboard-text="azrulartistik9@gmail.com"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8H18C18.5304 8 19.0391 8.21071 19.4142 8.58579C19.7893 8.96086 20 9.46957 20 10V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H10C9.46957 20 8.96086 19.7893 8.58579 19.4142C8.21071 19.0391 8 18.5304 8 18V10Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 8V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V14C4 14.5304 4.21071 15.0391 4.58579 15.4142C4.96086 15.7893 5.46957 16 6 16H8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Copy Email</button>
+              </div>
+
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+              <script>
+                var clipboard = new ClipboardJS('.btn-copy');
+                clipboard.on('success', function(e) {
+                  alert('Email copied to clipboard!');
+                });
+              </script>
                     <div class="social-media-icon">
                       <ul class="list-unstyled">
                         <li><a href="https://dribbble.com/designlagi"><i class="fab fa-dribbble"></i></a></li>
@@ -361,106 +358,196 @@
                     <h2 class="main-common-title">Recommendations
                     </h2>
                     <div class="row client-feedback-slider">
-                      <div class="col-lg-6">
+                      <!-- Testimonial 1 -->
+                      <div class="col-lg-6 mb-4">
                         <div class="feedback-item">
-                          <div class="feedback-top-info">
-                            <div class="rating">
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                            </div>
-                            <div class="website">
-                              <a href="https://www.linkedin.com/in/username" target="_blank" class="linkedin-btn">Linkedin</a>
-                                <svg class="arrow-up" width="14" height="15" viewBox="0 0 14 15" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M9.91634 4.5835L4.08301 10.4168" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                  <path d="M4.66699 4.5835H9.91699V9.8335" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                </svg>
-                              </a>
+                          <div class="profile-section">
+                            <div class="profile-info">
+                              <img src="path-to-profile-image-1" alt="Oliver Clain" class="profile-pic">
+                              <div class="name-position">
+                                <a href="https://www.linkedin.com/in/username1" target="_blank" class="name-link">
+                                  <span class="name">Oliver Clain</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                  </svg>
+                                </a>
+                                <p class="position">Product Designer</p>
+                              </div>
                             </div>
                           </div>
                           <div class="details">
-                            <p>
-                              "We've been using Azrul's Portfolio for over a year now, and I must say, it's been a game-changer
-                              for us. The user interface is intuitive and the feature.
-                            </p>
-                          </div>
-                          <div class="designation">
-                            <p><span>Oliver Clain</span> - Product Designer</p>
+                            <p>"We've been using Azrul's Portfolio for over a year now, and I must say, it's been a game-changer for us. The user interface is intuitive and the feature."</p>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6">
+                    
+                      <!-- Testimonial 2 -->
+                      <div class="col-lg-6 mb-4">
                         <div class="feedback-item">
-                          <div class="feedback-top-info">
-                            <div class="rating">
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                            </div>
-                            <div class="website">
-                              <a href="https://www.linkedin.com/in/username" target="_blank" class="linkedin-btn">Linkedin</a> 
-                                <svg class="arrow-up" width="14" height="15" viewBox="0 0 14 15" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M9.91634 4.5835L4.08301 10.4168" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                  <path d="M4.66699 4.5835H9.91699V9.8335" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                </svg>
-                              </a>
+                          <div class="profile-section">
+                            <div class="profile-info">
+                              <img src="path-to-profile-image-2" alt="Emma Wilson" class="profile-pic">
+                              <div class="name-position">
+                                <a href="https://www.linkedin.com/in/username2" target="_blank" class="name-link">
+                                  <span class="name">Emma Wilson</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                  </svg>
+                                </a>
+                                <p class="position">UI/UX Designer</p>
+                              </div>
                             </div>
                           </div>
                           <div class="details">
-                            <p>
-                              "We've been using Azrul's Portfolio for over a year now, and I must say, it's been a game-changer
-                              for us. The user interface is intuitive and the feature.
-                            </p>
-                          </div>
-                          <div class="designation">
-                            <p><span>Oliver Clain</span> - Product Designer</p>
+                            <p>"The portfolio system has streamlined our design process significantly. The collaboration features are particularly impressive."</p>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6">
+                    
+                      <!-- Testimonial 3 -->
+                      <div class="col-lg-6 mb-4">
                         <div class="feedback-item">
-                          <div class="feedback-top-info">
-                            <div class="rating">
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                            </div>
-                            <div class="website">
-                              <a href="https://www.linkedin.com/in/username" target="_blank" class="linkedin-btn">Linkedin</a>
-                                <svg class="arrow-up" width="14" height="15" viewBox="0 0 14 15" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M9.91634 4.5835L4.08301 10.4168" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                  <path d="M4.66699 4.5835H9.91699V9.8335" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                </svg>
-                              </a>
+                          <div class="profile-section">
+                            <div class="profile-info">
+                              <img src="path-to-profile-image-3" alt="James Chen" class="profile-pic">
+                              <div class="name-position">
+                                <a href="https://www.linkedin.com/in/username3" target="_blank" class="name-link">
+                                  <span class="name">James Chen</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                  </svg>
+                                </a>
+                                <p class="position">Frontend Developer</p>
+                              </div>
                             </div>
                           </div>
                           <div class="details">
-                            <p>
-                              "We've been using Azrul's Portfolio for over a year now, and I must say, it's been a game-changer
-                              for us. The user interface is intuitive and the feature.
-                            </p>
+                            <p>"The code quality and documentation are exceptional. It's made our development process much more efficient."</p>
                           </div>
-                          <div class="designation">
-                            <p><span>Oliver Clain</span> - Product Designer</p>
+                        </div>
+                      </div>
+                    <!-- Testimonial 3 -->
+                      <div class="col-lg-6 mb-4">
+                        <div class="feedback-item">
+                          <div class="profile-section">
+                            <div class="profile-info">
+                              <img src="path-to-profile-image-3" alt="James Chen" class="profile-pic">
+                              <div class="name-position">
+                                <a href="https://www.linkedin.com/in/username3" target="_blank" class="name-link">
+                                  <span class="name">James Chen</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                  </svg>
+                                </a>
+                                <p class="position">Frontend Developer</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="details">
+                            <p>"The code quality and documentation are exceptional. It's made our development process much more efficient."</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Testimonial 4 -->
+                      <div class="col-lg-6 mb-4">
+                        <div class="feedback-item">
+                          <div class="profile-section">
+                            <div class="profile-info">
+                              <img src="path-to-profile-image-4" alt="Sarah Johnson" class="profile-pic">
+                              <div class="name-position">
+                                <a href="https://www.linkedin.com/in/username4" target="_blank" class="name-link">
+                                  <span class="name">Sarah Johnson</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                  </svg>
+                                </a>
+                                <p class="position">Product Manager</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="details">
+                            <p>"Outstanding portfolio system that has transformed how we showcase our work. The interface is clean and professional."</p>
                           </div>
                         </div>
                       </div>
                     </div>
+                    
+                    <style>
+                    .feedback-item {
+                      background: #fff;
+                      padding: 25px;
+                      border-radius: 10px;
+                      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                      height: 100%;
+                    }
+                    
+                    .profile-section {
+                      display: flex;
+                      align-items: center;
+                      margin-bottom: 20px;
+                    }
+                    
+                    .profile-info {
+                      display: flex;
+                      align-items: center;
+                    }
+                    
+                    .profile-pic {
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                      margin-right: 15px;
+                      object-fit: cover;
+                    }
+                    
+                    .name-position {
+                      display: flex;
+                      flex-direction: column;
+                    }
+                    
+                    .name-link {
+                      display: flex;
+                      align-items: center;
+                      text-decoration: none;
+                      color: inherit;
+                      transition: color 0.3s ease;
+                    }
+                    
+                    .name-link:hover {
+                      color: #0077b5;
+                    }
+                    
+                    .name {
+                      font-weight: bold;
+                      font-size: 1.1rem;
+                    }
+                    
+                    .position {
+                      margin: 5px 0 0 0;
+                      color: #666;
+                      font-size: 0.9rem;
+                    }
+                    
+                    .details {
+                      margin-top: 15px;
+                    }
+                    
+                    .details p {
+                      color: #444;
+                      line-height: 1.6;
+                      margin: 0;
+                    }
+                    
+                    svg {
+                      margin-left: 5px;
+                    }
+                    
+                    @media (max-width: 992px) {
+                      .col-lg-6 {
+                        margin-bottom: 20px;
+                      }
+                    }
+                    </style>
                   </div>
                   <div class="awards-recognitions">
                     <h2 class="main-common-title">Awards and Certifications
