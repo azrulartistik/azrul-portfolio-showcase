@@ -326,18 +326,51 @@
                       <div class="row g-3">
                         <div class="col-md-6">
                           <div class="image-item">
-                            <img src="assets/img/projects/project-details-2.png" alt="project-details-2"
-                              class="img-fluid w-100">
+                            <img src="assets/img/ai-course-creation/ai-preview 1.png" 
+                                 alt="project-details-2" 
+                                 class="img-fluid w-100" 
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#imageModal">
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="image-item">
-                            <img src="assets/img/projects/project-details-3.png" alt="project-details-3"
-                              class="img-fluid w-100">
+                            <img src="assets/img/ai-course-creation/ai-preview 2.png" 
+                                 alt="project-details-3" 
+                                 class="img-fluid w-100" 
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#imageModal">
                           </div>
                         </div>
                       </div>
                     </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                      <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-body text-center">
+                            <img id="modalImage" class="img-fluid" alt="Full Image">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                      // Tambahkan event listener ke semua gambar dengan data-bs-target="#imageModal"
+                      const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                      const modalImage = document.getElementById('modalImage');
+                    
+                      images.forEach(image => {
+                        image.addEventListener('click', function() {
+                          // Set sumber gambar modal sesuai dengan gambar yang diklik
+                          modalImage.src = this.src;
+                        });
+                      });
+                    });
+                    </script>
+                    
                     <div class="more-info-block">
                       <h4 class="more-info-title" style="color: #212529;"><b>Project Background</b></h4>
                       <p>Online education has grown rapidly in recent years, providing greater access for individuals to learn anytime 
@@ -424,26 +457,117 @@
                         address the challenges faced by educators in developing and structuring online course content.</p>
                         <p>To strengthen the problem statement, I gathered supporting data on AI’s influence in the edtech sector. 
                           A key reference was the statistical report from AIPRM on AI in education, which highlighted:</p>
-                          <div class="main-image" style="margin-bottom: 20px;">
-                            <img src="assets/img/ai-course-creation/research-insight.png" alt="research-insight">
+                        
+                        <!-- Add Image -->
+                      <div class="main-image" style="margin-bottom: 20px;">
+                        <img src="assets/img/ai-course-creation/research-insight.png" 
+                             alt="research-insight"
+                             class="img-fluid" 
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal">                        
+                    
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img id="modalImage" class="img-fluid" alt="Full Image">
+                                </div>
+                            </div>
                         </div>
+                      </div>
+                    
+                      <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        // Tambahkan event listener ke semua gambar
+                        const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                        const modalImage = document.getElementById('modalImage');
+                    
+                        images.forEach(image => {
+                            image.addEventListener('click', function() {
+                                // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                modalImage.src = this.src;
+                            });
+                        });
+                      });
+                      </script>      
                           
                           <h5 class="more-info-subtitle" style="margin-bottom: 15px;">This is an overview of how teachers have 
                             incorporated AI into their everyday teaching practices.</h5>
-                            
-                            <div class="main-image" style="margin-bottom: 20px;">
-                                <img src="assets/img/ai-course-creation/airpm-2.png" alt="airpm-2">
+                                                        
+                            <!-- Add Image -->
+                      <div class="main-image" style="margin-bottom: 20px;">
+                        <img src="assets/img/ai-course-creation/airpm-2.png" 
+                             alt="airpm-2"
+                             class="img-fluid" 
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal">                        
+                    
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img id="modalImage" class="img-fluid" alt="Full Image">
+                                </div>
                             </div>
-                            
+                        </div>
+                      </div>
+                    
+                      <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        // Tambahkan event listener ke semua gambar
+                        const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                        const modalImage = document.getElementById('modalImage');
+                    
+                        images.forEach(image => {
+                            image.addEventListener('click', function() {
+                                // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                modalImage.src = this.src;
+                            });
+                        });
+                      });
+                      </script>      
+
                             <p style="margin-top: 20px;"><i>According to a Forbes survey, about 60% of teachers have incorporated AI into 
                               their daily teaching, while 35% say they have not.</i></p>
 
                             <h5 class="more-info-subtitle" style="margin-bottom: 15px;">An overview of the most commonly used AI tools 
                               in education.</h5>
-                              
-                              <div class="main-image" style="margin-bottom: 20px;">
-                                  <img src="assets/img/ai-course-creation/airpm-1.png" alt="airpm-1">
-                              </div>
+                                                           
+                              <!-- Add Image -->
+                      <div class="main-image" style="margin-bottom: 20px;">
+                        <img src="assets/img/ai-course-creation/airpm-1.png" 
+                             alt="airpm-1"
+                             class="img-fluid" 
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal">                        
+                    
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img id="modalImage" class="img-fluid" alt="Full Image">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    
+                      <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        // Tambahkan event listener ke semua gambar
+                        const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                        const modalImage = document.getElementById('modalImage');
+                    
+                        images.forEach(image => {
+                            image.addEventListener('click', function() {
+                                // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                modalImage.src = this.src;
+                            });
+                        });
+                      });
+                      </script>      
                               
                               <p style="margin-top: 20px;"><i>Over 35% of teachers use chatbots to support students, while nearly 29% 
                                 integrate AI through intelligent tutoring systems.</i></p>                              
@@ -484,14 +608,76 @@
                           to check if AI is being utilized for automating student evaluations and giving a feedback, and also <b>AI quiz creation</b> to analyze 
                           how AI is assisting in generating quizzes and interactive content. This comprehensive analysis provided 
                           valuable insights to guide Eduqat’s feature development and competitive strategy.</p>
-                        <div class="main-image" style="margin-bottom: 20px;">
-                          <img src="assets/img/ai-course-creation/bechmarking-result.png" alt="bechmarking-result">
-                      </div>           
+                        
+                      <!-- Add Image -->
+                      <div class="main-image" style="margin-bottom: 20px;">
+                        <img src="assets/img/ai-course-creation/bechmarking-result.png" 
+                             alt="bechmarking-result"
+                             class="img-fluid" 
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal">                        
+                    
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img id="modalImage" class="img-fluid" alt="Full Image">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    
+                      <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        // Tambahkan event listener ke semua gambar
+                        const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                        const modalImage = document.getElementById('modalImage');
+                    
+                        images.forEach(image => {
+                            image.addEventListener('click', function() {
+                                // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                modalImage.src = this.src;
+                            });
+                        });
+                      });
+                      </script>           
                       <h4 class="card-title">Key Takeaways From Benchmarking</h4>
                       <p>After analyzing Thinkific, Kajabi, Teachable, Mini Course, and Learnworlds, here’s what I found:</p>  
+                      
+                      <!-- Add Image -->
                       <div class="main-image" style="margin-bottom: 20px;">
-                        <img src="assets/img/ai-course-creation/benchmarking-insight.png" alt="benchmarking-insight">
-                      </div> 
+                        <img src="assets/img/ai-course-creation/benchmarking-insight.png" 
+                             alt="benchmarking-insight"
+                             class="img-fluid" 
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal">                        
+                    
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img id="modalImage" class="img-fluid" alt="Full Image">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    
+                      <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        // Tambahkan event listener ke semua gambar
+                        const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                        const modalImage = document.getElementById('modalImage');
+                    
+                        images.forEach(image => {
+                            image.addEventListener('click', function() {
+                                // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                modalImage.src = this.src;
+                            });
+                        });
+                      });
+                      </script>
                     <h4 class="card-title"><b>Business Goal Insights for Eduqat Based on the Research Data</b></h4>
                       <p>Based on my research, <b>Eduqat’s AI-driven course creation</b> should align with the following business goals:</p>
                       <h5 class="more-info-subtitle" style="margin-bottom: 15px;">A. Market Differentiation</h5>
@@ -515,7 +701,7 @@
 
 
 
-                      <h4 class="more-info-title text-primary"><b>2 Ideate</b></h4>
+                      <h4 class="more-info-title text-primary"><b>2. Ideate</b></h4>
                       <h4 class="card-title"><b>Brainstorming With Team</b></h4>
                       <p>After gathering insights from research, the next crucial step is to present the findings to the internal team. 
                         My team and I will always open a meeting discussion using Zoom, Slack or Lark, this step will help us to 
@@ -523,13 +709,437 @@
                         features while aligning with development feasibility. Additionally, we will 
                         identify the key user needs when interacting with the AI-powered course creation tool.</p> 
                         <h5 class="more-info-subtitle" style="margin-bottom: 15px;">Features Mapping Using Eisenhower Matrix</h5>
+                        <!-- Add Image -->
                         <div class="main-image" style="margin-bottom: 20px;">
-                          <img src="assets/img/ai-course-creation/eisenhower-matrix.png" alt="eisenhower-matrix">
-                        </div> 
+                          <img src="assets/img/ai-course-creation/eisenhower-matrix.png" 
+                               alt="userflow-aicourse-creation-1"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">                        
+                      
+                          <!-- Modal -->
+                          <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                          <div class="modal-dialog modal-xl modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-body text-center">
+                                      <img id="modalImage" class="img-fluid" alt="Full Image">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      
+                        <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                          // Tambahkan event listener ke semua gambar
+                          const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                          const modalImage = document.getElementById('modalImage');
+                      
+                          images.forEach(image => {
+                              image.addEventListener('click', function() {
+                                  // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                  modalImage.src = this.src;
+                              });
+                          });
+                        });
+                        </script>
+                        
                         <p style="margin-top: 20px;"><i>constraints: For MPV AI-driven course creation v1, Eduqat only focus on rich-text 
                           contents but just drop on title. So if user want to get the content details inside of that material, they can generate manually using AI rich-text tool.
                         </i></p> 
                     </div>
+                    <h4 class="card-title"><b>User Flow</b></h4>
+                      <p>As a team, we sat down to map out the ideal user journey for Eduqat’s AI-Driven Course Creation. Our goal 
+                        was to ensure a smooth experience for educators, whether they preferred building their courses manually or 
+                        leveraging AI assistance.</p>
+                        <p>We started by outlining the basics—users (vendors) log in via SSO and land on the dashboard. From there, 
+                          they navigate to the Product menu, select the Self-Paced Course option, and see a table listing all their 
+                          existing courses. This gives them an overview of what’s already created.</p>
+                          <p>Now comes the exciting part—creating a new course. When a user clicks Create New Course, 
+                            we designed a pop-up with two options:</p>
+                            <ul class="list-unstyled">
+                              <li>
+                                <b>1. Start from Blank</b> which takes them straight to the Curriculum Builder for manual structuring.
+                              </li>
+                              <li>
+                                <b>2. Generate Using AI</b> where a new prompt appears, asking for key details like the number of 
+                                chapters and the complexity level of the course.
+                              </li>                         
+                            </ul>
+                            <p>This flow balances efficiency and flexibility, ensuring that users can harness AI without losing 
+                              creative control. As a team, we felt this approach would make course creation more intuitive and 
+                              time-saving while still allowing for personal customization.</p>
+                        <h5 class="more-info-subtitle" style="margin-bottom: 15px;">Features Mapping Using Eisenhower Matrix</h5>
+
+                        <div class="main-image" style="margin-bottom: 20px;">
+                          <img src="assets/img/ai-course-creation/userflow-aicourse-creation-1.png" 
+                               alt="userflow-aicourse-creation-1"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">
+                           </div>
+                            <div class="main-image" style="margin-bottom: 20px;">
+                              <img src="assets/img/ai-course-creation/userflow-aicourse-creation-2.png"
+                               alt="userflow-aicourse-creation-2"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">
+                              </div>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                          <div class="modal-dialog modal-xl modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-body text-center">
+                                      <img id="modalImage" class="img-fluid" alt="Full Image">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                          // Tambahkan event listener ke semua gambar
+                          const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                          const modalImage = document.getElementById('modalImage');
+                      
+                          images.forEach(image => {
+                              image.addEventListener('click', function() {
+                                  // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                  modalImage.src = this.src;
+                              });
+                          });
+                      });
+                      </script>
+
+                        <p style="margin-top: 20px;"><i>constraints: For MPV AI-driven course creation v1, Eduqat only focus on rich-text 
+                          contents but just drop on title. So if user want to get the content details inside of that material, they can generate manually using AI rich-text tool.
+                        </i></p> 
+                    </div>
+                    <h4 class="card-title"><b>Wireframing at Eduqat: A Unique Approach</b></h4>
+                      <p>At Eduqat, the way we do wireframing is a bit different from most companies. Instead of starting with 
+                        rough sketches or low-fidelity wireframes, <b>we jump straight into building wireframes using our 
+                          existing design system components</b>. This makes our wireframes look almost like the final high-fidelity design, 
+                        even though they’re still in the early stages.</p>
+                        <p>Why do we do this? Because it helps us <b>communicate ideas more clearly</b> to both stakeholders and developers. 
+                          Stakeholders can <b>visualize the product better</b>, and developers can <b>immediately assess whether the design 
+                            logic makes sense and is technically possible to build</b>. This means we get faster, more relevant feedback, 
+                          and avoid major revisions later in the process.
+                        </p>
+                        <p>For me, this approach has been both <b>challenging and exciting</b>. Since we have to present our wireframes quickly, 
+                          there’s a lot of pressure to get things right. But at the same time, it’s helped me<b> understand backend logic 
+                            better</b> and work more effectively with developers. Plus, getting direct feedback from C-level executives means 
+                          we can align expectations early on, making the whole process smoother.
+                        </p>
+                        <p>In the end, this way of wireframing helps us create better designs and faster. So, we can make sure that what we build is 
+                          both user-friendly and technically feasible.
+                        </p>
+                       
+                        <h5 class="more-info-subtitle" style="margin-bottom: 15px;">Features Mapping Using Eisenhower Matrix</h5>
+
+                        <div class="main-image" style="margin-bottom: 20px;">
+                          <img src="assets/img/ai-course-creation/noimage.png" 
+                               alt="userflow-aicourse-creation-1"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">
+                           </div>
+                      </div>
+                           <h5 class="more-info-subtitle" style="margin-bottom: 15px;">Features Mapping Using Eisenhower Matrix</h5>
+                            <div class="main-image" style="margin-bottom: 20px;">
+                              <img src="assets/img/ai-course-creation/noimage.png"
+                               alt="userflow-aicourse-creation-2"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">
+                              </div>
+                              </div>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                          <div class="modal-dialog modal-xl modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-body text-center">
+                                      <img id="modalImage" class="img-fluid" alt="Full Image">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                          // Tambahkan event listener ke semua gambar
+                          const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                          const modalImage = document.getElementById('modalImage');
+                      
+                          images.forEach(image => {
+                              image.addEventListener('click', function() {
+                                  // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                  modalImage.src = this.src;
+                              });
+                          });
+                      });
+                      </script>                       
+                    </div>
+                    <h4 class="more-info-title text-primary"><b>3. Design</b></h4>
+                    <h4 class="card-title"><b>High-Fidelity Design: Refining the Vision
+                    </b></h4>
+                    <p>Once we’ve gathered feedback from stakeholders and developers, it’s time to refine our wireframes into 
+                      high-fidelity designs. This phase starts with me polishing the previous wireframes into final designs, 
+                      ensuring everything is clean, consistent, and aligned with Eduqat’s design system.</p> 
+
+                      <p>After my part is done, we hold an internal review session with the product team, which includes:</p> 
+                      <ul class="list-unstyled">
+                        <li>
+                          <b>1. Satrio Herlambang Putra</b> as Head of Product
+                        </li>
+                        <li>
+                          <b>2. Fatur Ariyan</b> as Sr. Product Designer
+                        </li>
+                        <li>
+                          <b>3. Azrul (My Self)</b> Product Designer
+                        </li>  
+                        <li>
+                          <b>4. Andy Ardana</b> as UI Designer
+                        </li>  
+                        <li>
+                          <b>5. Melati Octavia</b> as UX Writer
+                        </li>                         
+                      </ul>
+                      <p>This review is crucial because it allows us to evaluate the design from different perspectives—usability, 
+                        aesthetics, and feasibility. The discussions in this session often serve as a turning point for refining 
+                        the design further before the next stakeholder meeting.</p> 
+                        <p>At this stage, Andy Ardana, our UI Designer, takes over to finalize the visual details, ensuring the design 
+                          meets Eduqat’s style standards and design system. Once the high-fidelity design is ready, we schedule a 
+                          Zoom meeting with stakeholders to present it and gather final feedback.</p> 
+                        <p>Any necessary tweaks are made before we hand off the design to the developers. This includes a dedicated 
+                          team meeting where we walk them through the design, provide context, and share Jira tickets as development 
+                          guidelines. This structured process ensures a smooth transition from design to development, 
+                          making implementation more efficient and aligned with our vision.</p> 
+
+                          <p>Oke, before we take a look at the high-fidelity designs, let's watch the overview of some Ai features on Eduqat
+                            that have been competely built by our team for V1 (MVP 1).
+                          </p> 
+                      
+                      <h5 class="more-info-subtitle" style="margin-bottom: 15px;">Watch AI Course Creation Overview on eduqat</h5>
+                      
+                      <div class="video-container position-relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe 
+                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                          src="https://www.youtube.com/embed/UEpPpbK_F4A" 
+                          title="Watch AI Overview"
+                          frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen>
+                        </iframe>
+                      </div>
+                      </div>  
+                      <p style="margin-top: 20px;">
+                        <i>Note: This video was uploaded on March 9, 2023. As of now, Eduqat has been updated with more visual aesthetics. 
+                            <a href="https://eduqat.com" target="_blank">Let's Join Eduqat!</a>
+                        </i>
+                    </p>
+
+                    <h5 class="more-info-subtitle" style="margin-bottom: 15px;"><b>Before Moving to High-Fidelity, We Had to Finalize the AI Logo</b></h5>
+                    <p>Once the concept for AI Course Creation was solid, the next step was defining a distinctive AI logo for 
+                      Eduqat—one that stood out from competitors. We began by researching various logo inspirations, analyzing 
+                      design trends, and exploring visual elements that could represent AI in a way that aligned with Eduqat’s identity.
+                    </p> 
+                    <p>From our initial explorations, we created multiple logo variations and narrowed them down to three potential 
+                      designs for finalization. However, during the review process, we realized that these logos felt too complex 
+                      and didn’t fully reflect Eduqat’s core identity—simple, clean, and modern.
+                    </p> 
+                    <div class="main-image" style="margin-bottom: 20px;">
+                      <img src="assets/img/ai-course-creation/ai-logo-1.png" 
+                           alt="ai-logo-1"
+                           class="img-fluid" 
+                           data-bs-toggle="modal" 
+                           data-bs-target="#imageModal">
+                  </div>
+                  <p>After several iterations and refinements, we simplified the design while maintaining a sleek, contemporary feel. 
+                    And finally—boom! The logo was approved, perfectly capturing the essence of AI within Eduqat’s brand. 🚀
+                  <div class="main-image" style="margin-bottom: 20px;">
+                      <img src="assets/img/ai-course-creation/ai-logo-2.png"
+                           alt="ai-logo-2"
+                           class="img-fluid" 
+                           data-bs-toggle="modal" 
+                           data-bs-target="#imageModal">
+                  </div>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                      <div class="modal-dialog modal-xl modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-body text-center">
+                                  <img id="modalImage" class="img-fluid" alt="Full Image">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                      // Tambahkan event listener ke semua gambar
+                      const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                      const modalImage = document.getElementById('modalImage');
+                  
+                      images.forEach(image => {
+                          image.addEventListener('click', function() {
+                              // Set sumber gambar modal sesuai dengan gambar yang diklik
+                              modalImage.src = this.src;
+                          });
+                      });
+                  });
+                  </script>
+                    <h4 class="card-title"><b>Let's Breakdown The UI's
+                    </b></h4>
+                    <h5 class="more-info-subtitle" style="margin-bottom: 15px;">1. Product Library Interface | Self-Paced</h5>
+                    <p>Isi deskripsi tentang tampilan nya disini.
+                    </p>
+
+                        <div class="main-image" style="margin-bottom: 20px;">
+                          <img src="assets/img/ai-course-creation/course-library.png" 
+                               alt="course-library"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">
+                           </div>
+                           
+                           <h5 class="more-info-subtitle" style="margin-bottom: 15px;">2. Modal Pop up - Create New Product Interface</h5>
+                           <p>Isi deskripsi tentang tampilan nya disini.
+                           </p>                         
+                            <div class="main-image" style="margin-bottom: 20px;">
+                              <img src="assets/img/ai-course-creation/ai1.png"
+                               alt="ai1"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">
+                              </div>
+
+                              <h5 class="more-info-subtitle" style="margin-bottom: 15px;">3. Modal Pop up - Create With Smart Ai</h5>
+                           <p>Isi deskripsi tentang tampilan nya disini.
+                           </p>                         
+                            <div class="main-image" style="margin-bottom: 20px;">
+                              <img src="assets/img/ai-course-creation/ai2.png"
+                               alt="ai2"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">
+                              </div>
+
+                              <div class="main-image" style="margin-bottom: 20px;">
+                                <img src="assets/img/ai-course-creation/ai3.png"
+                                 alt="ai3"
+                                 class="img-fluid" 
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#imageModal">
+                                </div>
+
+                              <h5 class="more-info-subtitle" style="margin-bottom: 15px;">4. Curriculum Builder - Contents are Completely Generated</h5>
+                           <p>Isi deskripsi tentang tampilan nya disini.
+                           </p>                         
+                            <div class="main-image" style="margin-bottom: 20px;">
+                              <img src="assets/img/ai-course-creation/ai4.png"
+                               alt="ai4"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">
+                              </div>
+                              <div class="main-image" style="margin-bottom: 20px;">
+                                <img src="assets/img/ai-course-creation/ai5.png"
+                                 alt="ai5"
+                                 class="img-fluid" 
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#imageModal">
+                                </div>
+
+                              <h5 class="more-info-subtitle" style="margin-bottom: 15px;">5. Material Lesson | Open Rich-Text Material</h5>
+                           <p>Isi deskripsi tentang tampilan nya disini.
+                           </p>                         
+                            <div class="main-image" style="margin-bottom: 20px;">
+                              <img src="assets/img/ai-course-creation/ai6.png"
+                               alt="ai6"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">
+                              </div>
+
+                              <h5 class="more-info-subtitle" style="margin-bottom: 15px;">6. Rich-Text Material | Add Content Details Using Smart Ai</h5>
+                           <p>Isi deskripsi tentang tampilan nya disini.
+                           </p>                         
+                            <div class="main-image" style="margin-bottom: 20px;">
+                              <img src="assets/img/ai-course-creation/ai7.png"
+                               alt="ai7"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">
+                              </div>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                          <div class="modal-dialog modal-xl modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-body text-center">
+                                      <img id="modalImage" class="img-fluid" alt="Full Image">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                          // Tambahkan event listener ke semua gambar
+                          const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                          const modalImage = document.getElementById('modalImage');
+                      
+                          images.forEach(image => {
+                              image.addEventListener('click', function() {
+                                  // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                  modalImage.src = this.src;
+                              });
+                          });
+                      });
+                      </script>                       
+                    </div>
+
+                    <h4 class="more-info-title text-primary"><b>4. Reflection</b></h4>
+                    <h4 class="card-title"><b>Impact</b></h4>
+                    <p>The development of our AI-driven course creation feature has had a significant impact on educators and course 
+                      creators. By leveraging AI, we’ve drastically reduced the time and effort required to build structured, 
+                      high-quality courses. Based on our projections and industry benchmarks, we estimate that this innovation has:</p> 
+                      <!-- Stats/Counter Section -->
+                    <div class="row g-4 mb-4">
+                      <div class="col-6 col-md-3 text-center">
+                        <h3 class="number text-primary"><b>50%</b></h3>
+                        <p class="mb-0">Educator Workload Reduced</p>
+                      </div>
+                      <div class="col-6 col-md-3 text-center">
+                        <h3 class="number text-primary"><b>3x</b></h3>
+                        <p class="mb-0">Faster AI Course Creation</p>
+                      </div>
+                      <div class="col-6 col-md-3 text-center">
+                        <h3 class="number text-primary"><b>85%</b></h3>
+                        <p class="mb-0">Higher User Engagement</p>
+                      </div>
+                      <div class="col-6 col-md-3 text-center">
+                        <h3 class="number text-primary">+10hrs</h3>
+                        <p class="mb-0">Saved Per Course Creation</p>
+                      </div>
+                    </div>
+                      <p>These numbers aren’t just stats, its show how much easier and more efficient course creation has become. 
+                        With AI handling the heavy lifting, educators can spend less time on manual setup and more time on what 
+                        really matters: creating great learning experiences.</p>
+                        <p>It's not just about speed, AI also helps make courses more engaging and interactive, which means students 
+                          stay more involved and learn better. As we keep improving this technology, we’re excited to see even more 
+                          impacts, more personalized learning experiences, real-time feedbacks, and effortless content updates. 
+                          This is just the beginning of a smarter way to teach and learn.</p> 
+
+                    <h4 class="card-title"><b>Next Step</b></h4>
+                    <p>The development of our AI-driven course creation feature has had a significant impact on educators and course 
+                      creators. By leveraging AI, we’ve drastically reduced the time and effort required to build structured, 
+                      high-quality courses. Based on our projections and industry benchmarks, we estimate that this innovation has:</p>
+                    </div>
+                  </div>
+                </div>     
                     <div class="prev-and-next-btn">
                       <button class="btn btn-prev">Previous</button>
                       <button class="btn btn-next">Next</button>
