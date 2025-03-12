@@ -286,7 +286,7 @@
                   
                   <div class="portfolio-details-area">
                     <div class="main-image">
-                      <img src="assets/img/ai-course-creation/course-creation-cover-inside.png" alt="project-details-1">
+                      <img src="assets/img/ai-assignment/ai-assignment-cover-inside.png" alt="course-creation-cover-inside">
                     </div>
                     <div class="portfolio-details-text">
                       <div class="short-info">
@@ -326,20 +326,52 @@
                       <div class="row g-3">
                         <div class="col-md-6">
                           <div class="image-item">
-                            <img src="assets/img/projects/project-details-2.png" alt="project-details-2"
-                              class="img-fluid w-100">
+                            <img src="assets/img/ai-assignment/preview-1.png" 
+                                 alt="preview-1" 
+                                 class="img-fluid w-100" 
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#imageModal">
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="image-item">
-                            <img src="assets/img/projects/project-details-3.png" alt="project-details-3"
-                              class="img-fluid w-100">
+                            <img src="assets/img/ai-assignment/preview-2.png" 
+                                 alt="preview-2" 
+                                 class="img-fluid w-100" 
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#imageModal">
                           </div>
                         </div>
                       </div>
                     </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                      <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-body text-center">
+                            <img id="modalImage" class="img-fluid" alt="Full Image">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                      // Tambahkan event listener ke semua gambar dengan data-bs-target="#imageModal"
+                      const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                      const modalImage = document.getElementById('modalImage');
+                    
+                      images.forEach(image => {
+                        image.addEventListener('click', function() {
+                          // Set sumber gambar modal sesuai dengan gambar yang diklik
+                          modalImage.src = this.src;
+                        });
+                      });
+                    });
+                    </script>
                     <div class="more-info-block">
-                      <h4 class="more-info-title" style="color: #212529;"><b>Project Overview</b></h4>
+                      <h4 class="more-info-title"><b>Project Overview</b></h4>
                       <p>After successfully launching the AI-Driven Course Creation project, we encountered a new challenge: many clients 
                         inquired about Eduqat’s assignment feature and how it could be enhanced. This prompted us to explore 
                         the integration of AI into our Assignment system. Our goal was to simplify the process for educators—helping them 
@@ -387,66 +419,93 @@
                         <p>Competitor benchmarking was another key part of my role, where I analyzed how leading edtech platforms implemented AI-driven assignment tools. This research helped uncover industry best practices, feature logic, and usability gaps that informed our design strategy.</p>
                         <p>With these insights, I developed <b>user flows, wireframes, and initial UI designs</b>, ensuring a seamless experience for educators. My work laid the foundation for the <b>AI-powered assignment creation, grading automation, and scalable feedback system</b>, before the final UI refinements were handed off to the dedicated <b>UI Designer</b>.</p>
                         
-                    <div class="more-info-block">
-                      <h4 class="more-info-title text-primary"><b>1. Discover</b></h4>
-                      <h4 class="card-title"><b>So, I Started With Research First!</b></h4>
-                      <p>The research phase began with data synthesis from stakeholders to identify the key pain points experienced 
-                        by Eduqat’s end users. These insights served as the foundation for further investigation, leading to secondary 
-                        research across various sources such as articles, blogs, news, and YouTube. The objective was to assess 
-                        the impact of AI in education and validate how Eduqat’s AI-driven course creation feature could effectively 
-                        address the challenges faced by educators in developing and structuring online course content.</p>
-                        <p>To strengthen the problem statement, I gathered supporting data on AI’s influence in the edtech sector. 
-                          A key reference was the statistical report from AIPRM on AI in education, which highlighted:</p>
-                          <div class="main-image" style="margin-bottom: 20px;">
-                            <img src="assets/img/ai-course-creation/research-insight.png" alt="research-insight">
-                        </div>
-                          
-                          <h5 class="more-info-subtitle" style="margin-bottom: 15px;">This is an overview of how teachers have 
-                            incorporated AI into their everyday teaching practices.</h5>
-                            
-                            <div class="main-image" style="margin-bottom: 20px;">
-                                <img src="assets/img/ai-course-creation/airpm-2.png" alt="airpm-2">
-                            </div>
-                            
-                            <p style="margin-top: 20px;"><i>According to a Forbes survey, about 60% of teachers have incorporated AI into 
-                              their daily teaching, while 35% say they have not.</i></p>
+                    <div class="more-info-block">                     
+                      <h4 class="more-info-title"><b>Uncharted Teritory</b></h4>
+                      <p>After multiple discussions with stakeholders about the logic behind AI Smart Assignment, my team and I uncovered 
+                        a key insight about AI Smart Assignment that the true challenge isn’t just about automation, but at its core, this 
+                        feature is about helping educators <b>spend less time creating assignments and making grading at scale more 
+                          efficient and insightful</b>. However, as we explored further, we discovered that the problem space was much broader 
+                        than anticipated <b>many aspects remained undefined, and the expected output needed clearer mapping</b> to truly address these challenges.
+                        As a product designer, I found myself asking:</p>
+                        <h5 class="more-info-subtitle" style="margin-bottom: 15px;"><strong><em>"What role do I play in solving this? What kind of solution can I define?"</em></strong></h5>
+                        <p>In trying to break down the problem, several concerns surfaced:</p>
 
-                            <h5 class="more-info-subtitle" style="margin-bottom: 15px;">An overview of the most commonly used AI tools 
-                              in education.</h5>
-                              
-                              <div class="main-image" style="margin-bottom: 20px;">
-                                  <img src="assets/img/ai-course-creation/airpm-1.png" alt="airpm-1">
+                        <div class="main-image" style="margin-bottom: 40px;">
+                          <img src="assets/img/ai-assignment/pain-points.png" 
+                               alt="pain-points"
+                               class="img-fluid" 
+                               data-bs-toggle="modal" 
+                               data-bs-target="#imageModal">                        
+                      
+                          <!-- Modal -->
+                          <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                          <div class="modal-dialog modal-xl modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-body text-center">
+                                      <img id="modalImage" class="img-fluid" alt="Full Image">
+                                  </div>
                               </div>
-                              
-                              <p style="margin-top: 20px;"><i>Over 35% of teachers use chatbots to support students, while nearly 29% 
-                                integrate AI through intelligent tutoring systems.</i></p>                              
-                        
-                      <h5 class="more-info-subtitle"><b>So, What’s Good for Eduqat?</b></h5>
-                      <p>After conducting research, I always find myself asking, ‘What can I contribute to Eduqat from my findings?’ 
-                        This question drives my approach to identifying valuable insights and translating them into meaningful solutions.
-                        So, the conclusion from research insights and identified pain points is Eduqat has the opportunity to revolutionize course 
-                        creation by leveraging AI-powered tools that directly address educators' challenges in designing and delivering 
-                        online courses. Below are key takeaways and recommendations for feature development:"
-                      </p>
-                      <ul class="list-unstyled">
-                        <li>
-                          <b>1. AI-Driven Curriculum Assistance:</b> I believe Eduqat can use AI to suggest course structures, 
-                          lesson sequences, and learning objectives based on best practices and existing educational frameworks. 
-                          This would make it much easier for educators to plan their courses without spending too much time on manual setup.
-                        </li>
-                        <li>
-                          <b>2. Smart Content Generation & Enhancement:</b> In my opinion, AI can help educators by automatically generating 
-                          course curriculum, course descriptions, rich-text content, lesson summaries, and even craete quizzes using AI.
-                        </li>
-                        <li>
-                          <b>3. AI-Powered Assessment & Feedback:</b> If a class has many students, grading and giving feedback can be 
-                          time-consuming. AI can help by automating quiz grading, providing instant feedback, and even suggesting areas 
-                          for improvement—saving teachers valuable time while maintaining quality.
-                        </li>
-                      </ul>
+                          </div>
+                        </div>
+                      
+                        <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                          // Tambahkan event listener ke semua gambar
+                          const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                          const modalImage = document.getElementById('modalImage');
+                      
+                          images.forEach(image => {
+                              image.addEventListener('click', function() {
+                                  // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                  modalImage.src = this.src;
+                              });
+                          });
+                        });
+                        </script> 
+                        <br><br/>  
+                          
+                          <h5 class="more-info-subtitle" style="margin-bottom: 15px;">With so many uncharted questions, our team dived 
+                            deeper into discussions to establish the boundaries and capabilities AI should have in this Smart Assignment 
+                            feature. Through this process, we defined key feature logic:</h5>
+                            
+                            <div class="main-image" style="margin-bottom: 40px;">
+                              <img src="assets/img/ai-assignment/key-insights.png" 
+                                   alt="key-insights"
+                                   class="img-fluid" 
+                                   data-bs-toggle="modal" 
+                                   data-bs-target="#imageModal">                        
+                          
+                              <!-- Modal -->
+                              <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                              <div class="modal-dialog modal-xl modal-dialog-centered">
+                                  <div class="modal-content">
+                                      <div class="modal-body text-center">
+                                          <img id="modalImage" class="img-fluid" alt="Full Image">
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                          
+                            <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                              // Tambahkan event listener ke semua gambar
+                              const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                              const modalImage = document.getElementById('modalImage');
+                          
+                              images.forEach(image => {
+                                  image.addEventListener('click', function() {
+                                      // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                      modalImage.src = this.src;
+                                  });
+                              });
+                            });
+                            </script>
+                            
+                            <p style="margin-top: 20px;">This process of understanding how AI can help with assignments has been both challenging and exciting. As I design the interface, my main goal is to make sure educators feel supported, not replaced. AI isn’t just about automation, it’s about enhancing the learning experience in a way that keeps the human touch at the center.</p>
+                      
                       <p>Source: <a href="https://www.aiprm.com/ai-in-education-statistics/" target="_blank" rel="noopener noreferrer">www.aiprm.com/ai-in-education-statistics</a></p>
 
-                      <h4 class="card-title"><b>Competitor Benchmarking</b></h4>
+                      <h4 class="card-title"><b>Comparative Feature Analysis</b></h4>
                       <p>To build a competitive and innovative course creation platform, I conducted a competitor benchmarking analysis 
                         on the following platforms: Thinkific, Kajabi, Teachable, Mini Course Generator, and Learnworld. The goal was to compare 
                         key features and identify opportunities where Eduqat can stand out.</p>   
@@ -457,9 +516,60 @@
                           to check if AI is being utilized for automating student evaluations and giving a feedback, and also <b>AI quiz creation</b> to analyze 
                           how AI is assisting in generating quizzes and interactive content. This comprehensive analysis provided 
                           valuable insights to guide Eduqat’s feature development and competitive strategy.</p>
-                        <div class="main-image" style="margin-bottom: 20px;">
-                          <img src="assets/img/ai-course-creation/bechmarking-result.png" alt="bechmarking-result">
-                      </div>           
+
+                          <h5 class="more-info-subtitle" style="margin-bottom: 15px;">Google Classroom
+                          </h5>
+                          <div class="main-image" style="margin-bottom: 40px;">
+                            <img src="assets/img/ai-assignment/classroom-1.png" 
+                                 alt="classroom-1"
+                                 class="img-fluid" 
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#imageModal"> 
+                                 <br><br/>
+                                 
+                            <img src="assets/img/ai-assignment/classroom-2.png" 
+                                 alt="classroom-2"
+                                 class="img-fluid" 
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#imageModal">
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center">
+                                        <img id="modalImage" class="img-fluid" alt="Full Image">
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        
+                          <script>
+                          document.addEventListener('DOMContentLoaded', function() {
+                            // Tambahkan event listener ke semua gambar
+                            const images = document.querySelectorAll('[data-bs-target="#imageModal"]');
+                            const modalImage = document.getElementById('modalImage');
+                        
+                            images.forEach(image => {
+                                image.addEventListener('click', function() {
+                                    // Set sumber gambar modal sesuai dengan gambar yang diklik
+                                    modalImage.src = this.src;
+                                });
+                            });
+                          });
+                          </script>
+                          <br><br/>
+
+                      <h5 class="more-info-subtitle" style="margin-bottom: 15px;">Learnworld
+                          </h5>
+                        <div class="block-image">
+                          <video class="img-fluid w-100" controls>
+                            <source src="assets/img/ai-assignment/learnworld.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                        <p>Lorem ipsum dolor</p>   
+                                
                       <h4 class="card-title">Key Takeaways From Benchmarking</h4>
                       <p>After analyzing Thinkific, Kajabi, Teachable, Mini Course, and Learnworlds, here’s what I found:</p>  
                       <div class="main-image" style="margin-bottom: 20px;">
