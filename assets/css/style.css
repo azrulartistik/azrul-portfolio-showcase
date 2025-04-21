@@ -1868,6 +1868,37 @@ p {
 	color: var(--white);
 }
 
+:root {
+	--container-bg: #f8f9fa;
+	--container-border: #dee2e6;
+	--text-color: #212529;
+  }
+  
+  .text-grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+  }
+  
+  .text-card {
+	background-color: var(--container-bg);
+	border: 1px solid var(--container-border);
+	border-radius: 6px;
+	padding: 20px;
+	color: var(--text-color);
+	transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+
+  .section-title {
+	margin-bottom: 24px;
+  }
+  .paragraph {
+	margin-bottom: 16px;
+  }
+  .section-image {
+	margin-bottom: 40px;
+  }
+  
 /*=============================
 	08. Blog page CSS Start
 ===============================*/
@@ -2182,6 +2213,22 @@ p {
 	fill: var(--white);
 	color: var(--white);
 }
+
+.dark-theme .header-area .container .navbar-brand .logo-svg .logo-icon {
+	fill: var(--white);
+  }
+  
+  .dark-theme .header-area .container .navbar-brand .logo-svg .logo-path {
+	fill: var(--black);
+  }
+
+.header-area .container .navbar-brand .logo-svg .logo-icon {
+	fill: var(--black);
+  }
+  
+  .header-area .container .navbar-brand .logo-svg .logo-path {
+	fill: var(--white);
+  }
 
 .dark-theme .header-area .container .navbar-brand span .primary {
 	color: var(--primary);
@@ -2669,6 +2716,12 @@ p {
 	background-color: var(--primary);
 	color: var(--white);
 }
+
+.dark-theme {
+	--container-bg: var(--dark-theme-black, #222);
+	--container-border: var(--black, #333);
+	--text-color: var(--light-black, #e0e0e0);
+  }
 
 @media screen and (max-width:700px) {
 	
